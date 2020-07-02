@@ -14,7 +14,7 @@ import ru.darzam.payservice.util.AccountConstant;
 @Data
 public class TransactionDto {
 
-  @ApiModelProperty(example = "8682034e-bbb2-11ea-b3de-0242ac130004", dataType = "UUID")
+  @ApiModelProperty(example = "8682034e-bbb2-11ea-b3de-0242ac130004")
   private UUID id;
   @NotNull
   @Min(value = AccountConstant.MIN_SUM, message = "the sum cannot be less than zero")
