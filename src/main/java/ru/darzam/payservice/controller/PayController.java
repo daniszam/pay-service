@@ -33,7 +33,7 @@ public class PayController {
     return payService.get(transactionDto);
   }
 
-  @PostMapping(Api.Pay.ADD_MONEY)
+  @PutMapping(Api.Pay.ADD_MONEY)
   @ApiOperation(value = "To create account send request without 'id' field")
   public AccountDto add(@RequestBody @Valid TransactionDto transactionDto) {
     return payService.put(transactionDto);
